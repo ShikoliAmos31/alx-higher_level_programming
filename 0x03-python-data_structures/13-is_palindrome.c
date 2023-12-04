@@ -40,15 +40,14 @@ int is_palindrome(listint_t **head)
 	aux2 = aux;
 	while (*head != NULL)
 {
-		if ((*head)->n != aux2->n)
-		{
-			free_listint(aux);
-			return (0);
-		}
-		*head = (*head)->next;
-		aux2 = aux2->next;
+	if ((*head)->n != aux2->n)
+	{
+		free_listint(aux);
+		return (0);
+	}
+	*head = (*head)->next;
+	aux2 = aux2->next;
 }
-	free_listint(aux);
-	return (1);
+free_listint(aux);
+return (1);
 }
-
