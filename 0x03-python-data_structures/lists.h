@@ -4,7 +4,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <unistd.h>
-#include <Python.h>
 /**
  * struct listint_s - singly linked list
  * @n: integer
