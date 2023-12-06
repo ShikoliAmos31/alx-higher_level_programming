@@ -44,6 +44,7 @@ void print_python_bytes(PyObject *p)
 	printf("[.] bytes object info\n");
 	printf("  size: %ld\n", size);
 	printf("  trying string: %s\n", bytes_data);
+
 	printf("  first 10 bytes: ");
 
 	for (Py_ssize_t i = 0; i < size && i < 10; ++i)
