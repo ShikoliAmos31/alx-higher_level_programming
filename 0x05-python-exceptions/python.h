@@ -1,5 +1,6 @@
 #ifndef PYTHON_H
 #define PYTHON_H
+
 #include "python.h"
 
 void print_bytes_info(PyObject *p);
