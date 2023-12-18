@@ -6,9 +6,11 @@ def list_division(my_list_1, my_list_2, list_length):
             dividend = my_list_1[i] if i < len(my_list_1) else 0
             divisor = my_list_2[i] if i < len(my_list_2) else 1
 
+            # Check if divisor is 0
             if divisor == 0:
                 raise ZeroDivisionError("division by 0")
 
+            # Perform the division
             division_result = dividend / divisor
             result.append(division_result)
 
