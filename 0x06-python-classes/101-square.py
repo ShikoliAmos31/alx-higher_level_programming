@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Define a Square class."""
 
+
 class Square:
     """
     This class represents a square.
@@ -93,6 +94,7 @@ class Square:
             for _ in range(self.size):
                 result += " " * self.position[0] + "#" * self.size + "\n"
         return result[:-1]
+
 
 if __name__ == "__main__":
     my_square = Square(5, (0, 0))
