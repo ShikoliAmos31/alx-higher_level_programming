@@ -2,10 +2,12 @@
 """
 This module defines the MagicClass.
 
-MagicClass has methods to initialize an instance with a radius, calculate the area, and calculate the circumference.
+MagicClass has methods to initialize an instance with a radius, calculate the area,
+and calculate the circumference.
 """
 
 import math
+
 
 class MagicClass:
     """
