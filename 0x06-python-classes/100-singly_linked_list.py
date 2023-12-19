@@ -85,27 +85,10 @@ class SinglyLinkedList:
 
     def __str__(self):
         """Return a string representation of the linked list."""
-        result = ""
+        result = []
         current = self.head
         while current:
-            result += str(current.data) + "\n"
+            result.append(str(current.data))
             current = current.next_node
-        return result.strip()
+        return '\n'.join(result)
 
-def main():
-    sll = SinglyLinkedList()
-    sll.sorted_insert(2)
-    sll.sorted_insert(5)
-    sll.sorted_insert(3)
-    sll.sorted_insert(10)
-    sll.sorted_insert(1)
-    sll.sorted_insert(-4)
-    sll.sorted_insert(-3)
-    sll.sorted_insert(4)
-    sll.sorted_insert(5)
-    sll.sorted_insert(12)
-    sll.sorted_insert(3)
-    print(sll)
-
-if __name__ == "__main__":
-    main()
