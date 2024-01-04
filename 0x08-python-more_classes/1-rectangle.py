@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 class Rectangle:
     def __init__(self, width=0, height=0):
-        self.width = width
-        self.height = height
+        self.__width = width
+        self.__height = height
 
     @property
     def width(self):
@@ -29,3 +29,6 @@ class Rectangle:
             raise ValueError("height must be >= 0")
         else:
             self.__height = value
+
+    def get_attributes_ordered(self):
+        return {'_Rectangle__height': self.__height, '_Rectangle__width': self.__width}
