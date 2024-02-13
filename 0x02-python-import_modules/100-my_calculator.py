@@ -2,16 +2,20 @@
 if __name__ == "__main__":
     from sys import argv
     from calculator_1 import add, sub, mul, div
+
     argc = len(argv)
+
     if argc != 4:
         print('Usage: {} <a> <operator> <b>'.format(argv[0]))
         exit(1)
+
     ops = {
         '+': add,
         '-': sub,
         '*': mul,
         '/': div
     }
+
     if argv[2] in ops:
         num1 = int(argv[1])
         num2 = int(argv[3])
@@ -21,5 +25,5 @@ if __name__ == "__main__":
     else:
         print('Unknown operator. Available operators: +, -, * and /')
         exit(1)
-    exit(0)
 
+    exit(0)
